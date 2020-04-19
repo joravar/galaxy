@@ -18,6 +18,5 @@
     - geerlingguy.pip
     - galaxyproject.galaxy
     - role: uchida.miniconda
-      become: true
     - role: usegalaxy_eu.galaxy_systemd
     - role: galaxyproject.nginx
