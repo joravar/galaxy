@@ -7,6 +7,6 @@ This is for production installation of Galaxy using ansible on Ubuntu servere 18
 
     usermod -aG galaxy www-data
 - restart Nginx "sudo systmectl restart nginx"
-- Tool instllation may not work beacuse of permission issue for user galaxy on dir /srv/galaxy. Correct permissions "chown -R galaxy:galaxy /srv/galaxy
+- Tool instllation may not work beacuse of permission issue for user galaxy on dir /srv/galaxy. Correct permissions "chown -R galaxy:galaxy /srv/galaxy this may need to run with every change or else edit /home/osb/galaxy/roles/galaxyproject.galaxy/tasks/paths.yml for permissions 750 > 770 for "__galaxy_dir_perms: "{{ '0770' if __galaxy_user_group == __galaxy_privsep_user_group else '0755' }}""
 -
 
