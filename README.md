@@ -1,4 +1,4 @@
-This is for production installation of Galaxy using ansible Ubuntu servere 18.04
+This is for production installation of Galaxy using ansible on Ubuntu servere 18.04
 - Do not install ansible from default repo as it will install version 2.5 which will not work. Required ansible version is >=2.7. Install it using 
     - sudo apt-add-repository ppa:ansible/ansible
     - sudo apt install ansible # it will install version 2.9.x
