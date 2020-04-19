@@ -1,0 +1,2 @@
+[galaxyservers]
+galaxy.osb.homelab ansible_connection=local
